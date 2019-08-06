@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="mx-auto" id="backLink">
+                <h2>Basestation Simulator</h2>
+            </div>
+        </nav>
+        <div class="row text-center">
+            <p>Enter the sensor min and max values. Then generate the graph.</p>
+        </div>
+    <form method="POST" action="#">
+            <div class="dropdown-divider"></div>
+        <div class="row form-group">
+            <div class="col-sm-6">
+                <p class="font-weight-bold">Data interval</p>
+                <input class="form-control" type="text">
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <p class="font-weight-bold">Sensor 1</p>
+        <div class="row form-group">
+            <div class="col-sm-3">
+                <p>Min</p>
+                <input class="form-control" type="text" name="sensor1min" >
+            </div>
+            <div class="col-sm-3">
+                <p>Max</p>
+                <input class="form-control" type="text" name="sensor1max">
+            </div>
+            <div class="col-sm-6">
+                <p>Data Type</p>
+                <select class="form-control" type="text" >
+                    <option value="methane_ppm">Methane PPM</option>
+                    <option value="calibration_zero">Calibration Zero</option>
+                    <option value="wind_speed">Wind Speed</option>
+                    <option value="wind_direction">Wind Direction</option>
+                </select>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <p class="font-weight-bold">Sensor 2</p>
+        <div class="row form-group">
+            <div class="col-sm-3">
+                <p>Min</p>
+                <input class="form-control" type="text" name="sensor2min">
+            </div>
+            <div class="col-sm-3">
+                <p>Max</p>
+                <input class="form-control" type="text" name="sensor2max">
+            </div>
+            <div class="col-sm-6">
+                <p>Data Type</p>
+                <select class="form-control" type="text" >
+                    <option value="methane_ppm">Methane PPM</option>
+                    <option value="calibration_zero">Calibration Zero</option>
+                    <option value="wind_speed">Wind Speed</option>
+                    <option value="wind_direction">Wind Direction</option>
+                </select>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <p class="font-weight-bold">Sensor 3</p>
+        <div class="row form-group">
+            <div class="col-sm-3">
+                <p>Min</p>
+                <input class="form-control" type="text" name="sensor3min">
+            </div>
+            <div class="col-sm-3">
+                <p>Max</p>
+                <input class="form-control" type="text" name="sensor3max">
+            </div>
+            <div class="col-sm-6">
+                <p>Data Type</p>
+                <select class="form-control" type="text" >
+                    <option value="methane_ppm">Methane PPM</option>
+                    <option value="calibration_zero">Calibration Zero</option>
+                    <option value="wind_speed">Wind Speed</option>
+                    <option value="wind_direction">Wind Direction</option>
+                </select>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="row form-group">
+            <div class="col-sm-6 mx-auto">
+                <button  class="btn btn-outline-dark btn-block mb-2" type="reset">Reset Sensor</button>
+            </div>
+            <div class="col-sm-6 mx-auto">
+                <button  class="btn btn-outline-success btn-block mb-2">Generate Graph</button>
+            </div>
+        </div>
+        <div class="dropdown-divider mb-5"></div>
+    </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/line.js"></script>
+</body>
+</html>
